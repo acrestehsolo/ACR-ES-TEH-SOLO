@@ -602,50 +602,78 @@
 
   /* SURAT PESANAN (cetak A4) */
   #orderSheet{display:none}
-  .os{font-family:var(--sans);color:#0F201C;font-size:10.5pt;line-height:1.5}
-  .os-head{display:flex;align-items:center;justify-content:space-between;gap:14px;border-bottom:3px solid #0B5347;padding-bottom:10px;margin-bottom:16px}
-  .os-brand{display:flex;align-items:center;gap:10px}
-  .os-brand .mk{width:44px;height:44px;border-radius:50%;background:#0B5347;color:#fff;display:grid;place-items:center;font-family:var(--serif);font-weight:700;font-size:12pt}
-  .os-brand b{display:block;font-family:var(--serif);font-size:15pt;color:#0B5347;line-height:1.1}
-  .os-brand span{font-size:7.5pt;letter-spacing:.18em;text-transform:uppercase;color:#0E8C74;font-weight:800}
-  .os-meta{text-align:right;font-size:8.5pt;color:#4B675F}
-  .os h1{font-family:var(--serif);font-size:15pt;margin:0 0 2px;color:#0B5347;text-align:center}
-  .os .os-sub{text-align:center;font-size:9pt;color:#62837B;margin:0 0 14px}
-  .os h2{font-size:9pt;letter-spacing:.12em;text-transform:uppercase;color:#0B5347;margin:16px 0 6px;padding-bottom:4px;border-bottom:1px solid #BFDDD5}
-  .os table{width:100%;border-collapse:collapse;font-size:9.5pt}
-  .os table.kv td{padding:3.5px 0;vertical-align:top}
-  .os table.kv td:first-child{width:34%;color:#5E7B73}
-  .os table.kv td b{color:#0F201C}
-  .os table.money th,.os table.money td{border:1px solid #BFDDD5;padding:6px 8px;text-align:left}
-  .os table.money th{background:#F0F8F5;font-size:8.5pt;text-transform:uppercase;letter-spacing:.06em;color:#34544B}
+  .os{font-family:var(--sans);color:#0F201C;font-size:9pt;line-height:1.36}
+  .os-head{display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:2.5px solid #0B5347;padding-bottom:6px;margin-bottom:7px}
+  .os-brand{display:flex;align-items:center;gap:9px}
+  .os-brand .mk{width:36px;height:36px;border-radius:50%;background:#0B5347;color:#fff;display:grid;place-items:center;font-family:var(--serif);font-weight:700;font-size:10.5pt}
+  .os-brand b{display:block;font-family:var(--serif);font-size:13pt;color:#0B5347;line-height:1.05}
+  .os-brand span{font-size:6.4pt;letter-spacing:.18em;text-transform:uppercase;color:#0E8C74;font-weight:800}
+  .os-meta{text-align:right;font-size:7.6pt;color:#4B675F;line-height:1.45}
+  .os h1{font-family:var(--serif);font-size:13pt;margin:2px 0 1px;color:#0B5347;text-align:center;letter-spacing:.02em}
+  .os .os-sub{text-align:center;font-size:7.8pt;color:#62837B;margin:0 0 6px}
+  .os h2{font-size:7.6pt;letter-spacing:.13em;text-transform:uppercase;color:#0B5347;margin:8px 0 3px;padding-bottom:2px;border-bottom:1px solid #BFDDD5}
+  .os table{width:100%;border-collapse:collapse}
+  .os table.kv{font-size:8.6pt}
+  .os table.kv td{padding:2px 0;vertical-align:top}
+  .os table.kv td:first-child{width:30%;color:#5E7B73}
+  .os table.kv td b{color:#0F201C;font-weight:700}
+  .os table.kv td.lbl{color:#5E7B73;white-space:nowrap;padding-left:14px;width:19%}
+  .os .clamp2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .os table.money{font-size:8.4pt}
+  .os table.money th,.os table.money td{border:1px solid #BFDDD5;padding:4px 6px;text-align:left}
+  .os table.money th{background:#F0F8F5;font-size:6.8pt;text-transform:uppercase;letter-spacing:.05em;color:#34544B}
   .os table.money td.num{text-align:right;white-space:nowrap}
-  .os .big-dp{background:#E9F8F3;border:1px solid #00BFA5;border-radius:8px;padding:9px 12px;margin-top:8px;font-size:9.5pt}
-  .os .big-dp b{color:#8E2E25;font-size:12pt}
-  .os ul{padding-left:16px;margin:6px 0 0;font-size:9.5pt}
-  .os ul li{margin-bottom:2px}
-  .os .qr-row{display:flex;gap:14px;align-items:center;margin-top:8px;border:1px dashed #B9D8CF;border-radius:8px;padding:10px}
-  .os .qr-row img{width:86px;height:86px;border:3px solid #fff;outline:1px solid #DFEFEA}
-  .os .qr-row .t{font-size:9pt;line-height:1.5}
-  .os .qr-row .t b{display:block;font-size:11pt;color:#0B5347}
-  .os .status{margin-top:10px;background:#EAF8F3;border:1px solid #B0E7D4;border-radius:8px;padding:8px 12px;font-size:9pt;color:#0F6B5B}
-  .os .sign{display:flex;justify-content:space-between;gap:30px;margin-top:26px;font-size:9.5pt}
-  .os .sign div{width:44%;text-align:center}
-  .os .sign .line{margin-top:52px;border-top:1px solid #0F201C;padding-top:4px}
-  .os-foot{margin-top:18px;border-top:1px solid #BFDDD5;padding-top:8px;font-size:7.8pt;color:#62837B;text-align:center;line-height:1.5}
+  .os .big-dp{background:#E9F8F3;border:1px solid #00BFA5;border-radius:6px;padding:5px 9px;margin-top:4px;font-size:8.4pt}
+  .os .big-dp b{color:#8E2E25;font-size:10.4pt}
+  .os ul{padding-left:14px;margin:1px 0 0;font-size:8.4pt;columns:2;column-gap:16px}
+  .os ul li{margin:0 0 1px;break-inside:avoid}
+  .os .qr-row{display:flex;gap:10px;align-items:center;margin-top:2px;border:1px dashed #B9D8CF;border-radius:6px;padding:6px 8px}
+  .os .qr-row img{width:62px;height:62px;border:2px solid #fff;outline:1px solid #DFEFEA;flex:0 0 auto}
+  .os .qr-row .t{font-size:8pt;line-height:1.42}
+  .os .qr-row .t b{display:block;font-size:10pt;color:#0B5347;line-height:1.2}
+  .os .status{margin-top:5px;background:#EAF8F3;border:1px solid #B0E7D4;border-radius:6px;padding:5px 9px;font-size:7.5pt;color:#0F6B5B;line-height:1.4}
+  .os .sign{display:flex;justify-content:space-between;gap:24px;margin-top:8px;font-size:8.4pt}
+  .os .sign>div{width:45%;text-align:center}
+  .os .sign .line{margin-top:24px;border-top:1px solid #0F201C;padding-top:3px}
+  .os-foot{margin-top:6px;border-top:1px solid #BFDDD5;padding-top:4px;font-size:6.8pt;color:#62837B;text-align:center;line-height:1.4}
+
+  /* ==== CETAK: tepat 1 halaman A4 ==== */
   @media print{
-    @page{size:A4;margin:12mm}
-    body{background:#fff!important}
-    body > *{display:none!important}
-    body > #orderSheet{display:block!important}
-    #orderSheet{position:static;width:100%;margin:0;padding:0;background:#fff}
-    .print-only{display:initial!important}
+    @page{size:A4 portrait;margin:10mm}
+    html,body{margin:0!important;padding:0!important;background:#fff!important;height:auto!important}
+    body>*{display:none!important}
+    body>#orderSheet{display:block!important}
+    #orderSheet{position:static;width:auto!important;max-width:none!important;margin:0!important;padding:0!important;background:#fff!important;display:block!important}
+    .print-only{display:inline!important}
     .no-print{display:none!important}
-    .os{font-size:10pt}
-    .os h2{margin:12px 0 5px}
-    .os .sign{margin-top:16px}
-    .os .sign .line{margin-top:38px}
-    .os-foot{margin-top:10px}
-    .os table.money tr,.os .sign{break-inside:avoid}
+    .os{width:190mm;font-size:10.6pt;line-height:1.36;page-break-after:avoid;break-after:avoid;zoom:var(--osZoom,1)}
+    .os-head{padding-bottom:10px;margin-bottom:12px}
+    .os-brand .mk{width:48px;height:48px;font-size:13.6pt}
+    .os-brand b{font-size:18pt}
+    .os-brand span{font-size:8.4pt}
+    .os-meta{font-size:10.2pt}
+    .os h1{font-size:17pt;margin:7px 0 2px}
+    .os .os-sub{font-size:10.2pt;margin:0 0 10px}
+    .os h2{margin:12px 0 6px;font-size:9.6pt;padding-bottom:3px}
+    .os table.kv{font-size:10.8pt}
+    .os table.kv td{padding:4.5px 0}
+    .os table.money{font-size:10.4pt}
+    .os table.money th,.os table.money td{padding:7px 9px}
+    .os table.money th{font-size:8.6pt}
+    .os .big-dp{font-size:10.4pt;padding:8px 12px;margin-top:7px}
+    .os .big-dp b{font-size:13pt}
+    .os ul{font-size:10.4pt;padding-left:18px;column-gap:22px}
+    .os ul li{margin-bottom:2.5px}
+    .os .qr-row{padding:9px 12px;margin-top:6px;gap:14px}
+    .os .qr-row img{width:92px;height:92px}
+    .os .qr-row .t{font-size:10pt}
+    .os .qr-row .t b{font-size:12.8pt}
+    .os .status{font-size:9.4pt;padding:8px 12px;margin-top:8px}
+    .os .sign{font-size:10.4pt;margin-top:11px}
+    .os .sign .line{margin-top:36px}
+    .os-foot{font-size:8.5pt;margin-top:9px;padding-top:6px}
+    .os *{break-inside:avoid}
+    .os-head,.os h1,.os .os-sub,.os .qr-row,.os .big-dp,.os .status,.os .sign,.os-foot{break-inside:avoid;break-after:avoid}
   }
 
   @media (max-width:1180px){
@@ -1953,9 +1981,9 @@ const form = document.getElementById('mitraForm');
 const PAKET_DATA = {
   'Silver (Rp 8 juta)': {
     nama: 'Silver', harga: 8000000, dp: 4000000,
-    isi: ['1 unit booth ACR siap operasional', 'Perlengkapan buka lengkap (dispenser, termos, cooler box, cup & lid, sedotan, poster, seragam)',
-          'Modal awal operasional 1 bulan (teh, saset, gula, es, kemasan)', 'Mesin kasir: 1 HP kasir + 1 printer thermal 80 mm',
-          'Software kasir pintar 1 tahun + laporan realtime ke pemilik', 'Marketing online cabang baru (Google Maps, Instagram cabang, 10 konten)',
+    isi: ['1 unit booth ACR siap operasional', 'Perlengkapan buka lengkap: dispenser, termos, cooler box, cup & lid, sedotan, poster, seragam',
+          'Modal awal operasional 1 bulan (bahan baku & kemasan)', 'Mesin kasir: 1 HP kasir + 1 printer thermal 80 mm',
+          'Software kasir pintar 1 tahun + laporan realtime', 'Marketing online cabang baru: Google Maps + IG + 10 konten',
           'Pelatihan barista & SOP + pendampingan 30 hari']
   },
   'Gold (Rp 13 juta)': {
@@ -2045,21 +2073,24 @@ function pesanPesanan(o) {
 /* surat pesanan A4 untuk dicetak / disimpan PDF */
 function renderSuratPesanan(o) {
   const p = o.paket;
-  const baris = (k, v) => v ? '<tr><td>' + k + '</td><td><b>' + v + '</b></td></tr>' : '';
+  const baris = (k, v) => '<tr><td>' + k + '</td><td><b class="clamp2">' + (v || '—') + '</b></td></tr>';
   const isi = p ? p.isi.map(x => '<li>' + x + '</li>').join('') : '<li>Paket belum dipilih</li>';
   const sheet = document.getElementById('orderSheet');
   sheet.innerHTML =
    '<div class="os">' +
      '<div class="os-head">' +
        '<div class="os-brand"><span class="mk">ACR</span><div><b>ACR Es Teh Solo</b><span>Kemitraan UMKM</span></div></div>' +
-       '<div class="os-meta">No. Pesanan: <b>' + o.no + '</b><br>Tanggal: <b>' + o.tanggal + '</b><br>Status: Menunggu DP 50%</div>' +
+       '<div class="os-meta">No. Pesanan: <b>' + o.no + '</b><br>Tanggal: <b>' + o.tanggal + '</b><br>Status: <b>Menunggu DP 50%</b></div>' +
      '</div>' +
      '<h1>SURAT PESANAN KEMITRAAN</h1>' +
      '<p class="os-sub">Rincian pilihan paket calon mitra — wajib dibayar DP 50% sebelum booth dikerjakan</p>' +
      '<h2>1. Data Calon Mitra</h2>' +
      '<table class="kv">' +
-       baris('Nama lengkap', o.nama) + baris('No. WhatsApp', o.wa) + baris('Kota / Kabupaten', o.kota) +
-       baris('Rencana lokasi usaha', o.lokasi) + baris('Perkiraan modal siap', o.modal) +
+       '<tr><td>Nama lengkap</td><td><b>' + o.nama + '</b></td>' +
+           '<td class="lbl">WhatsApp</td><td><b>' + o.wa + '</b></td></tr>' +
+       '<tr><td>Kota / Kabupaten</td><td><b>' + o.kota + '</b></td>' +
+           '<td class="lbl">Perkiraan modal</td><td><b>' + (o.modal || '—') + '</b></td></tr>' +
+       baris('Rencana lokasi usaha', o.lokasi) +
        baris('Catatan / pertanyaan', o.pesan) +
      '</table>' +
      '<h2>2. Paket &amp; Rincian Pembayaran</h2>' +
@@ -2074,14 +2105,16 @@ function renderSuratPesanan(o) {
      '<h2>4. Pembayaran DP</h2>' +
      '<div class="qr-row">' +
        '<img src="assets/qr-gopay.png" alt="QR GoPay DP kemitraan">' +
-       '<div class="t">Scan QR dengan aplikasi GoPay<br>' +'<span class="print-only"><b>GoPay 0813 9239 9300</b></span>' +'<span class="no-print"><b>Klik tombol “Kirim Bukti DP” untuk chat admin.</b></span>' +'a.n. Admin Kemitraan ACR Es Teh Solo<br>Cantumkan nama &amp; nomor pesanan pada berita transfer, lalu kirim bukti ke WhatsApp admin.</div>' +
+       '<div class="t">Scan QR dengan aplikasi GoPay' +
+         '<b><span class="print-only">GoPay 0813 9239 9300</span><span class="no-print">GoPay admin</span></b>' +
+         'a.n. Admin Kemitraan ACR Es Teh Solo · Cantumkan nama &amp; nomor pesanan pada berita transfer, lalu kirim bukti ke WhatsApp admin.</div>' +
      '</div>' +
      '<div class="status">Ketentuan: DP 50% wajib dibayar sebelum booth diproduksi/divalidasi · Sisa 50% dibayar saat serah terima · Tidak lolos validasi sebelum produksi: DP dikembalikan 100% · Batal setelah produksi berjalan: DP tidak dapat dikembalikan.</div>' +
      '<div class="sign">' +
-       '<div>Calon Mitra<br><div class="line"><b>' + o.nama + '</b></div></div>' +
-       '<div>Admin Kemitraan ACR Es Teh Solo<br><div class="line">Nama &amp; tanda tangan</div></div>' +
+       '<div>Calon Mitra<div class="line"><b>' + o.nama + '</b></div></div>' +
+       '<div>Admin Kemitraan ACR Es Teh Solo<div class="line">Nama &amp; tanda tangan</div></div>' +
      '</div>' +
-     '<div class="os-foot">ACR Es Teh Solo · Booth: CR67+5XV, Ngruki, Cemani, Kec. Grogol, Kabupaten Sukoharjo, Jawa Tengah · ' +'<span class="print-only">WhatsApp 0813 9239 9300 · </span>' +'acrestehsolo20@gmail.com<br>Dokumen dibuat otomatis dari form pendaftaran mitra di website acr es teh solo.</div>' +
+     '<div class="os-foot">ACR Es Teh Solo · Booth: CR67+5XV, Ngruki, Cemani, Kec. Grogol, Kabupaten Sukoharjo, Jawa Tengah · <span class="print-only">WhatsApp 0813 9239 9300 · </span>acrestehsolo20@gmail.com<br>Dokumen dibuat otomatis dari form pendaftaran mitra di website ACR Es Teh Solo.</div>' +
    '</div>';
 }
 
@@ -2138,12 +2171,38 @@ form.addEventListener('keydown', (e) => {
   if (e.key === 'Enter' && e.target.tagName !== 'TEXTAREA') { e.preventDefault(); kirimDataMitra(); }
 });
 
-/* ===== cetak surat pesanan (A4) ===== */
+/* ===== cetak surat pesanan (A4, dijamin 1 halaman) ===== */
+function pasSatuHalaman() {
+  const sheet = document.getElementById('orderSheet');
+  const os = sheet.querySelector('.os');
+  if (!os) return;
+  sheet.style.removeProperty('--osZoom');
+
+  /* ukur tinggi surat pada lebar kertas A4 (190mm setelah margin 10mm) */
+  const box = document.createElement('div');
+  box.setAttribute('aria-hidden', 'true');
+  box.style.cssText = 'position:fixed;left:-99999px;top:0;width:190mm;visibility:hidden;pointer-events:none';
+  const clone = os.cloneNode(true);
+  clone.style.zoom = '1';
+  box.appendChild(clone);
+  document.body.appendChild(box);
+  const tinggiMm = clone.getBoundingClientRect().height / 96 * 25.4;
+  box.remove();
+
+  /* 277mm = tinggi A4 (297mm) - margin atas/bawah 10mm; sisakan 4mm agar aman */
+  const BATAS = 273;
+  if (tinggiMm > BATAS) {
+    const z = Math.max(0.72, BATAS / tinggiMm);
+    sheet.style.setProperty('--osZoom', z.toFixed(3));
+  }
+}
+
 document.getElementById('btnPrint').addEventListener('click', () => {
   if (!document.getElementById('orderSheet').innerHTML.trim()) {
     alert('Isi form pendaftaran lebih dulu, lalu tekan Kirim via WhatsApp. Surat pesanan akan otomatis dibuat.');
     return;
   }
+  pasSatuHalaman();
   window.print();
 });
 
