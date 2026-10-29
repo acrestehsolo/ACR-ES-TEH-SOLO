@@ -15,6 +15,7 @@ https://NAMA-AKUN.github.io/acr-es-teh-solo/
 
 ```
 index.html                          <- halaman utama website
+acr-es-teh-solo-1file.html          <- versi 1 file (semua gambar sudah di dalamnya)
 404.html                            <- halaman "tidak ditemukan"
 robots.txt                          <- pengaturan mesin pencari
 .nojekyll                           <- agar GitHub tidak memproses file
@@ -24,6 +25,7 @@ assets/                             <- semua foto, QR, dan gambar
    ├─ booth1.jpg … booth4.jpg
    ├─ booth-lokasi.jpg
    ├─ es-teh.jpg, es-teh-melon.jpg, es-teh-leci.jpg
+   ├─ es-beng-beng.jpg, es-susu-coklat.jpg, es-kopi-goday.jpg, es-sirup.jpg
    └─ qr-gopay.png
 ```
 
@@ -34,6 +36,32 @@ assets/                             <- semua foto, QR, dan gambar
 > meskipun berada di sub-folder seperti `.../acr-es-teh-solo/`. Tidak perlu diubah apa pun.
 
 ---
+
+# ⭐ CARA PALING CEPAT — cukup 1 file (tanpa folder)
+
+Kalau bingung mengunggah banyak file + folder `assets`, pakai cara ini:
+
+1. Unduh file **`acr-es-teh-solo-1file.html`** dari workspace ini (semua foto, QR, dan surat kontrak
+   sudah **ditanam di dalam file** — ukurannya ±5,2 MB).
+2. Buat repository **Public** di <https://github.com/new> (mis. `acr-es-teh-solo`).
+3. Klik **Add file → Upload files**, seret **1 file** itu, lalu **Commit changes**.
+4. **Ganti namanya menjadi `index.html`**: klik file → ikon pensil ✏️ → ubah nama di kotak nama file
+   menjadi `index.html` → **Commit changes**.
+   *(Bisa juga langsung ganti nama file di komputer menjadi `index.html` sebelum diunggah.)*
+5. **Settings → Pages → Source: Deploy from a branch → Branch: `main` + `/ (root)` → Save**.
+6. Tunggu 1–3 menit → website live di `https://NAMA-AKUN.github.io/acr-es-teh-solo/`.
+
+**Kelebihan cara ini:** hanya 1 file, tidak mungkin salah folder, tidak ada gambar yang hilang.
+**Kekurangan:** ukuran file besar (memuat semua gambar), jadi mengubah satu foto berarti membuat ulang
+file ini dengan perintah:
+
+```bash
+python3 tools/make-single-file.py
+```
+
+---
+
+# CARA LENGKAP — unggah folder (disarankan untuk jangka panjang)
 
 # CARA 1 — Lewat browser (tanpa install apa pun) ⭐ paling mudah
 
@@ -152,6 +180,8 @@ Gunakan salah satu saja: **Cara 1 (branch)** *atau* **Actions** — jangan kedua
 | `kontrak-mitra-acr-es-teh-solo.jpg` | Surat kontrak A4 yang bisa diunduh pengunjung |
 | `robots.txt`, `.nojekyll` | Pengaturan teknis GitHub Pages |
 | `.github/workflows/deploy-pages.yml` | Deploy otomatis (opsional) |
+| `acr-es-teh-solo-1file.html` | Website versi **1 file** (gambar ditanam) — cara upload paling mudah |
+| `tools/make-single-file.py` | Membuat ulang versi 1 file |
 | `tools/make-github-bundle.py` | Membuat ulang folder `github-upload` + zip |
 | `PANDUAN-GITHUB.md` | Panduan ini |
 | `README.md` | Panduan umum website + daftar teks yang bisa diedit |

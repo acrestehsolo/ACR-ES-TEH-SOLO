@@ -10,6 +10,7 @@ index.html          <- website utama (buka file ini)
 assets/hero.jpg     <- foto booth untuk hero
 assets/booth1..4.jpg<- foto booth untuk galeri
 assets/es-teh*.jpg  <- foto produk (es teh, melon, leci)
+assets/es-*.jpg     <- foto menu cup Rp 5.000 (beng-beng, susu coklat, kopi goday, sirup)
 assets/booth-lokasi.jpg <- foto booth Ngruki (bagian Lokasi & Alamat)
 assets/qr-gopay.png <- QR pembayaran DP (bagian Pembayaran DP 50%)
 404.html            <- halaman error 404 (khusus GitHub Pages)

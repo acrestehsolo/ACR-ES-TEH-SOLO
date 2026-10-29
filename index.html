@@ -242,6 +242,14 @@
   /* MENU */
   .menu-sec{background:var(--cream-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
   .prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .prod-sub{max-width:760px;margin:42px auto 22px;text-align:center}
+  .prod-sub .kicker{display:inline-flex;align-items:center;gap:8px;background:var(--gold-soft);color:#0B5347;font-size:.68rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase;padding:7px 14px;border-radius:999px}
+  .prod-sub h3{font-family:var(--serif);font-size:1.5rem;color:var(--ink);margin:12px 0 6px}
+  .prod-sub p{font-size:.9rem;color:var(--muted);margin:0}
+  .prod-grid.cup{grid-template-columns:repeat(4,1fr)}
+  .prod-grid.cup .prod-img{aspect-ratio:1/.92}
+  .prod-badge.cup{background:#fff;color:#0B5347;box-shadow:0 2px 10px rgba(11,83,71,.18)}
+  .prod-price.cup{color:#0E8C74;font-weight:900}
   .prod{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);transition:.25s}
   .prod:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
   .prod-img{position:relative;aspect-ratio:1/.92;background:#F0FAF6;overflow:hidden}
@@ -681,6 +689,7 @@
     .menu a{font-size:.84rem}
   }
   @media (max-width:1080px){
+    .prod-grid.cup{grid-template-columns:repeat(2,1fr)}
     .menu{display:none}
     .nav-cta .btn{display:none}
     .menu-fab{display:grid}
@@ -713,6 +722,9 @@
   @media (max-width:880px){
     .g2,.g3{grid-template-columns:1fr}
     .prod-grid{grid-template-columns:1fr;max-width:420px;margin:0 auto}
+    .prod-grid.cup{grid-template-columns:repeat(2,1fr);max-width:none;gap:14px}
+    .prod-grid.cup .prod-body{padding:12px 12px 14px}
+    .prod-grid.cup .prod-body h3{font-size:.92rem}
     .topbar .wrap{justify-content:center;text-align:center;font-size:.72rem}
   }
   @media (max-width:560px){
@@ -982,6 +994,62 @@
         </div>
       </article>
     </div>
+
+    <div class="prod-sub reveal">
+      <span class="kicker">Serba Rp 5.000 &middot; Dalam Cup Bersih</span>
+      <h3>Menu Sajian Cepat yang Paling Dicari</h3>
+      <p>Empat racikan dingin siap jual di booth ACR — tampil segar di cup, cepat disajikan, dan untungnya tebal.</p>
+    </div>
+
+    <div class="prod-grid cup">
+      <article class="prod reveal">
+        <div class="prod-img">
+          <img src="assets/es-beng-beng.jpg" alt="Es Beng Beng dalam cup plastik — cokelat creamy dengan whipped cream" width="456" height="420" loading="lazy">
+          <span class="prod-badge cup">Creamy</span>
+        </div>
+        <div class="prod-body">
+          <h3>Es Beng Beng</h3>
+          <p>Cokelat Beng-Beng diblender dengan susu &amp; es, dimahkotai whipped cream. Manis, gurih, selalu laris.</p>
+          <div class="prod-price cup">Rp 5.000 / cup</div>
+        </div>
+      </article>
+
+      <article class="prod reveal">
+        <div class="prod-img">
+          <img src="assets/es-susu-coklat.jpg" alt="Es susu coklat dalam cup dengan lelehan cokelat di dinding gelas" width="456" height="420" loading="lazy">
+          <span class="prod-badge cup">Favorit</span>
+        </div>
+        <div class="prod-body">
+          <h3>Es Susu Coklat</h3>
+          <p>Susu segar bertemu cokelat pekat, disajikan dingin dengan lelehan cokelat di dinding cup — penampilannya menggugah selera.</p>
+          <div class="prod-price cup">Rp 5.000 / cup</div>
+        </div>
+      </article>
+
+      <article class="prod reveal">
+        <div class="prod-img">
+          <img src="assets/es-kopi-goday.jpg" alt="Es Kopi Goday dalam cup plastik dengan es batu dan sedotan" width="456" height="420" loading="lazy">
+          <span class="prod-badge cup">Wajib Coba</span>
+        </div>
+        <div class="prod-body">
+          <h3>Es Kopi Goday</h3>
+          <p>Kopi racikan resep ACR yang wangi dan bold, disajikan dengan es batu jernih — penambah semangat jualan dan pelanggan.</p>
+          <div class="prod-price cup">Rp 5.000 / cup</div>
+        </div>
+      </article>
+
+      <article class="prod reveal">
+        <div class="prod-img">
+          <img src="assets/es-sirup.jpg" alt="Es sirup merah segar dalam cup plastik" width="456" height="420" loading="lazy">
+          <span class="prod-badge cup">Segar</span>
+        </div>
+        <div class="prod-body">
+          <h3>Es Sirup</h3>
+          <p>Sirup manis klasik dengan es serut dingin — merah cerahnya menarik dari kejauhan, langsung laris di siang terik.</p>
+          <div class="prod-price cup">Rp 5.000 / cup</div>
+        </div>
+      </article>
+    </div>
     <p class="menu-note center">Harga jual di atas adalah harga acuan brand dan boleh disesuaikan dengan daya beli area masing-masing. Modal bahan baku es teh hanya sekitar <b>Rp 900 – Rp 1.200 per cup</b>, sehingga marginnya tebal.</p>
   </div>
 </section>
@@ -1106,7 +1174,7 @@
         </tbody>
       </table>
     </div>
-    <p class="menu-note center">Semua harga dalam Rupiah dan dapat berubah sesuai kondisi produksi. Harga jual produk: es teh medium <b>Rp 2.500</b>, jumbo <b>Rp 3.000</b>, minuman saset <b>Rp 5.000/cup</b>.  Rincian biaya, ketentuan, dan isi paket dijelaskan lengkap oleh admin sebelum pendaftaran.</p>
+    <p class="menu-note center">Semua harga dalam Rupiah dan dapat berubah sesuai kondisi produksi. Harga jual produk: es teh medium <b>Rp 2.500</b>, jumbo <b>Rp 3.000</b>, minuman saset serta menu cup lain (es beng-beng, es susu coklat, es kopi goday, es sirup) <b>Rp 5.000/cup</b>.  Rincian biaya, ketentuan, dan isi paket dijelaskan lengkap oleh admin sebelum pendaftaran.</p>
   </div>
 </section>
 
@@ -1720,7 +1788,7 @@
       </div>
       <div class="faq-item">
         <button class="faq-q" type="button">Berapa harga jual produknya?<span class="plus">+</span></button>
-        <div class="faq-a"><p>Es teh Solo original medium <b>Rp 2.500</b>, jumbo <b>Rp 3.000</b>, dan minuman saset (melon, leci, dll.) <b>Rp 5.000/cup</b>. Harga ini terjangkau untuk pasar UMKM, dengan modal bahan baku hanya sekitar Rp 900 – Rp 1.200 per cup.</p></div>
+        <div class="faq-a"><p>Es teh Solo original medium <b>Rp 2.500</b>, jumbo <b>Rp 3.000</b>, dan minuman saset (melon, leci, dll.) serta menu cup lain seperti es beng-beng, es susu coklat, es kopi goday, dan es sirup masing-masing <b>Rp 5.000/cup</b>. Harga ini terjangkau untuk pasar UMKM, dengan modal bahan baku hanya sekitar Rp 900 – Rp 1.200 per cup.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" type="button">Apakah harus bayar DP dulu sebelum booth dikerjakan?<span class="plus">+</span></button>
