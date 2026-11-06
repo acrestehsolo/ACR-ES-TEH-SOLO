@@ -1,0 +1,16 @@
+{
+  "name": "ACR Es Teh Solo — Kemitraan UMKM",
+  "short_name": "ACR Es Teh",
+  "description": "Kemitraan es teh Solo: 1 booth siap jualan, perlengkapan, marketing online, dan kasir pintar dengan laporan realtime ke pemilik.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F6FBF9",
+  "theme_color": "#0B5347",
+  "lang": "id",
+  "icons": [
+    { "src": "assets/logo-96.png",  "sizes": "96x96",   "type": "image/png" },
+    { "src": "assets/logo-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/logo.png",     "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}

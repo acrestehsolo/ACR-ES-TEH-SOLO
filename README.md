@@ -13,6 +13,10 @@ assets/es-teh*.jpg  <- foto produk (es teh, melon, leci)
 assets/es-*.jpg     <- foto menu cup Rp 5.000 (beng-beng, susu coklat, kopi goday, sirup)
 assets/booth-lokasi.jpg <- foto booth Ngruki (bagian Lokasi & Alamat)
 assets/qr-gopay.png <- QR pembayaran DP (bagian Pembayaran DP 50%)
+assets/logo.png     <- logo ACR resmi 512px (header, footer, surat pesanan, og:image)
+assets/logo-192.png <- ikon 192px (apple-touch-icon, PWA)
+assets/logo-96.png  <- favicon tab browser
+site.webmanifest    <- nama & ikon saat website dipasang di HP (PWA)
 404.html            <- halaman error 404 (khusus GitHub Pages)
 robots.txt          <- pengaturan mesin pencari
 PANDUAN-GITHUB.md   <- panduan upload ke GitHub Pages

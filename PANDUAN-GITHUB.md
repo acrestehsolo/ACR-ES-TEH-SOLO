@@ -24,6 +24,7 @@ assets/                             <- semua foto, QR, dan gambar
    ├─ hero.jpg
    ├─ booth1.jpg … booth4.jpg
    ├─ booth-lokasi.jpg
+   ├─ logo.png, logo-192.png, logo-96.png
    ├─ es-teh.jpg, es-teh-melon.jpg, es-teh-leci.jpg
    ├─ es-beng-beng.jpg, es-susu-coklat.jpg, es-kopi-goday.jpg, es-sirup.jpg
    └─ qr-gopay.png
@@ -179,6 +180,8 @@ Gunakan salah satu saja: **Cara 1 (branch)** *atau* **Actions** — jangan kedua
 | `assets/` | Foto booth, produk, QR GoPay, dan gambar pendukung |
 | `kontrak-mitra-acr-es-teh-solo.jpg` | Surat kontrak A4 yang bisa diunduh pengunjung |
 | `robots.txt`, `.nojekyll` | Pengaturan teknis GitHub Pages |
+| `site.webmanifest` | Nama & ikon saat website dipasang di HP |
+| `assets/logo*.png` | Logo ACR (header, footer, ikon tab, surat pesanan) |
 | `.github/workflows/deploy-pages.yml` | Deploy otomatis (opsional) |
 | `acr-es-teh-solo-1file.html` | Website versi **1 file** (gambar ditanam) — cara upload paling mudah |
 | `tools/make-single-file.py` | Membuat ulang versi 1 file |
