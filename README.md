@@ -85,7 +85,7 @@ Buka `index.html` dengan editor teks (Notepad++ / VS Code), lalu cari teks berik
 
 | Paket | Investasi | Isi utama |
 |---|---|---|
-| Silver | **Rp 8.000.000** | 1 booth + perlengkapan buka lengkap + modal awal operasional 1 bulan + mesin kasir (1 HP kasir + 1 printer thermal 80 mm) + software kasir pintar 1 tahun + marketing online cabang baru |
+| Silver | **Rp 8.000.000** | 1 booth + perlengkapan buka lengkap + modal awal operasional 1 bulan + mesin kasir (1 HP kasir Milik Mitra + 1 printer thermal 80 mm Gratis) + software kasir pintar 1 tahun + marketing online cabang baru |
 | Gold | Rp 13.000.000 | Semua Silver + booth lebih besar (awning & LED) + modal awal 2 bulan + survey lokasi + marketing lanjutan (iklan lokal) + grand opening kit + kasir + laci uang |
 | Platinum | Rp 22.000.000 | Semua Gold + 2 booth + modal awal 3 bulan untuk 2 titik + 2 set kasir + kasir multi-outlet + hak wilayah |
 
